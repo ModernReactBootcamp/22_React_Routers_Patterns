@@ -15,13 +15,12 @@ class App extends Component {
             path='/food/:name'
             render={routeProps => <Food {...routeProps} />}
           />
-
           <Route
             exact
             path='/food/:foodName/drink/:drinkName'
             component={Meal}
           />
-          <Route exact path='/' render={() => <FoodSearch />} />
+          <Route exact path='/' component={FoodSearch} />} />
           <Route render={() => <h1>ERROR NOT FOUND</h1>} />
         </Switch>
       </div>
