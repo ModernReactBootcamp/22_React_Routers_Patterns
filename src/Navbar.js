@@ -12,10 +12,12 @@ class Navbar extends Component {
     alert('logged you in');
     this.props.history.push('/food/salmon');
   }
+
   render() {
     return (
       <div className='Navbar'>
         <button onClick={this.handleLogin}>Log In</button>
+        <button onClick={this.props.history.goBack}>Go Back</button>
       </div>
     );
   }
