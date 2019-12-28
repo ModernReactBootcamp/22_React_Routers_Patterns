@@ -4,11 +4,13 @@ import './App.css';
 import Food from './Food';
 import Meal from './Meal';
 import FoodSearch from './FoodSearch';
+import Navbar from './Navbar';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
+        <Navbar />
         <Switch>
           <Route
             exact
